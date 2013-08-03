@@ -31,3 +31,831 @@ Compiled application.js  (20ms)  (pid 6426)
 Compiled jquery.js  (36ms)  (pid 6426)
 Compiled jquery_ujs.js  (67ms)  (pid 6426)
 Completed 200 OK in 1280ms (Views: 1274.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 08:45:40 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (27.8ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (141.3ms)
+Completed 200 OK in 1082ms (Views: 1048.9ms | ActiveRecord: 28.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 08:45:57 -0700
+Served asset /application.css - 304 Not Modified (148ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 08:45:58 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 08:45:58 -0700
+Served asset /jquery.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 08:45:58 -0700
+Served asset /application.js - 304 Not Modified (145ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 08:47:51 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.4ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (141.2ms)
+Completed 500 Internal Server Error in 180ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort' for #<#<Class:0x915265c>:0x9150064>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort
+    8:       %th Rating
+    9:       %th= link_to "Release Date", realease_date_sort
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354_76183500'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.9ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.6ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 08:51:39 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.4ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (136.3ms)
+Completed 500 Internal Server Error in 168ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort_path' for #<#<Class:0xb3e8cb9c>:0xb3e8abf8>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort_path
+    8:       %th Rating
+    9:       %th= link_to "Release Date", realease_date_sort_path
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__638299988'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.1ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 09:05:06 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (8.9ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (307.1ms)
+Completed 500 Internal Server Error in 363ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort_path' for #<#<Class:0xb3dd4efc>:0xb3dd3354>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort_path
+    8:       %th Rating
+    9:       %th= link_to "Release Date", realease_date_sort_path
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__638299988'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.5ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 09:05:22 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (357.3ms)
+Completed 500 Internal Server Error in 447ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort_path' for #<#<Class:0xb3e964e4>:0xb3e94874>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort_path
+    8:       %th Rating
+    9:       %th= link_to "Release Date", realease_date_sort_path
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__638299988'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.6ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 09:06:03 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (540.8ms)
+Completed 500 Internal Server Error in 645ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort_path' for #<#<Class:0xb4805ae8>:0xb47f92fc>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort_path
+    8:       %th Rating
+    9:       %th= link_to "Release Date", realease_date_sort
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__633358588'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.4ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (60.9ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 09:06:30 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (636.0ms)
+Completed 500 Internal Server Error in 733ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort' for #<#<Class:0xb3a3e838>:0xb3a10b68>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort
+    8:       %th Rating
+    9:       %th= link_to "Release Date", realease_date_sort
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__640646918'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (19.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (71.1ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 09:14:54 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (6.5ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (136.2ms)
+Completed 500 Internal Server Error in 164ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort' for #<#<Class:0xb40dfc78>:0xb40c04e0>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort
+    8:       %th Rating
+    9:       %th= link_to "Release Date", release_date_sort
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__637141768'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.6ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2013-08-03 09:15:44 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (728.6ms)
+Completed 500 Internal Server Error in 806ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort_path' for #<#<Class:0x8e7f8a8>:0x8dd9cc8>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort_path
+    8:       %th Rating
+    9:       %th= link_to "Release Date", release_date_sort_path
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354_74274530'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (16.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.8ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-08-03 09:27:07 -0700
+Served asset /rails.png - 200 OK (87ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-03 09:28:20 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (260.5ms)
+Completed 500 Internal Server Error in 298ms
+
+ActionView::Template::Error (undefined local variable or method `title_sort_path' for #<#<Class:0x8d9f49c>:0x8d47120>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", title_sort_path
+    8:       %th Rating
+    9:       %th= link_to "Release Date", release_date_sort_path
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354_74274530'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-03 09:31:55 -0700
+
+ArgumentError (Unknown scope :movies given to :on):
+  config/routes.rb:42:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.1ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (9.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (39.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-03 09:33:32 -0700
+
+ArgumentError (can't use collection outside resource(s) scope):
+  config/routes.rb:42:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.3ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (71.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-03 09:34:27 -0700
+
+NameError (undefined local variable or method `movies' for #<ActionDispatch::Routing::Mapper:0xb3a02fa4>):
+  config/routes.rb:42:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (12.2ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (13.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-03 19:51:00 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (45.1ms)
+Completed 200 OK in 79ms (Views: 65.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 19:51:05 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 19:51:05 +0300
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 19:51:05 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 19:51:05 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/title_sort" for 127.0.0.1 at 2013-08-03 19:51:14 +0300
+  Processing by MoviesController#title_sort as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" 
+Completed 500 Internal Server Error in 48ms
+
+NoMethodError (undefined method `order' for #<Array:0xb3f38244>):
+  app/controllers/movies_controller.rb:42:in `title_sort'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.1ms)
+
+
+Started GET "/title_sort" for 127.0.0.1 at 2013-08-03 19:56:51 +0300
+  Processing by MoviesController#title_sort as HTML
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 2ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 19:56:51 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (56.7ms)
+Completed 200 OK in 92ms (Views: 82.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 19:56:58 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 19:56:58 +0300
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 19:56:59 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 19:56:59 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/release_date_sort" for 127.0.0.1 at 2013-08-03 19:57:12 +0300
+  Processing by MoviesController#release_date_sort as HTML
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 3ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 19:57:13 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (176.1ms)
+Completed 200 OK in 302ms (Views: 257.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 19:57:23 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 19:57:23 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 19:57:24 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 19:57:24 +0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/title_sort" for 127.0.0.1 at 2013-08-03 19:59:47 +0300
+  Processing by MoviesController#title_sort as HTML
+Redirected to http://localhost:3000/movies.%23%3CActiveRecord::Relation:0xb47279dc%3E
+Completed 302 Found in 2ms
+
+
+Started GET "/movies.%23%3CActiveRecord::Relation:0xb47279dc%3E" for 127.0.0.1 at 2013-08-03 19:59:48 +0300
+  Processing by MoviesController#index as 
+Completed 500 Internal Server Error in 1ms
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/movies_controller.rb:9:in `index'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.0ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-08-03 20:01:12 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (71.0ms)
+Completed 200 OK in 120ms (Views: 109.6ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:01:23 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:23 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:23 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:24 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/title_sort" for 127.0.0.1 at 2013-08-03 20:01:32 +0300
+  Processing by MoviesController#title_sort as HTML
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 2ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:01:32 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (18.9ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (132.3ms)
+Completed 200 OK in 216ms (Views: 186.1ms | ActiveRecord: 20.5ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:40 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:40 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:01:40 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:40 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (10ms)
+
+
+Started GET "/release_date_sort" for 127.0.0.1 at 2013-08-03 20:01:51 +0300
+  Processing by MoviesController#release_date_sort as HTML
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 2ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:01:52 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (95.5ms)
+Completed 200 OK in 194ms (Views: 171.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:55 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:55 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:01:55 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:01:55 +0300
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/title_sort" for 127.0.0.1 at 2013-08-03 20:02:19 +0300
+  Processing by MoviesController#title_sort as HTML
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 17ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:02:20 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (46.7ms)
+Completed 200 OK in 89ms (Views: 80.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:02:25 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:02:25 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:02:25 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:02:25 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/release_date_sort" for 127.0.0.1 at 2013-08-03 20:02:37 +0300
+  Processing by MoviesController#release_date_sort as HTML
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 1ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:02:37 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (49.9ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:02:41 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:02:41 +0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:02:41 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:02:41 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/title_sort" for 127.0.0.1 at 2013-08-03 20:16:45 +0300
+
+ActionController::RoutingError (No route matches [GET] "/title_sort"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/sort/title" for 127.0.0.1 at 2013-08-03 20:18:04 +0300
+  Processing by MoviesController#sort as HTML
+  Parameters: {"sort_field"=>"title"}
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 17ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:18:07 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.7ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (357.1ms)
+Completed 500 Internal Server Error in 389ms
+
+ActionView::Template::Error (undefined method `sort_path' for #<#<Class:0xb3a8eacc>:0xb3a858a0>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", sort_path('title')
+    8:       %th Rating
+    9:       %th= link_to "Release Date", sort_path('release_date')
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__640407998'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.9ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:20:41 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.7ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (800.1ms)
+Completed 500 Internal Server Error in 848ms
+
+ActionView::Template::Error (undefined method `sort_path' for #<#<Class:0xb3d0a648>:0xb3cd743c>):
+    4: %table#movies
+    5:   %thead
+    6:     %tr
+    7:       %th= link_to "Movie Title", sort_path('title')
+    8:       %th Rating
+    9:       %th= link_to "Release Date", sort_path('release_date')
+    10:       %th More Info
+  app/views/movies/index.html.haml:7:in `_app_views_movies_index_html_haml__987978354__640407998'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.8ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.5ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (54.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:21:22 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.2ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (75.6ms)
+Completed 200 OK in 174ms (Views: 135.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:21:29 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:21:29 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:21:29 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:21:29 +0300
+Served asset /application.js - 304 Not Modified (14ms)
+
+
+Started GET "/movies/sort/title" for 127.0.0.1 at 2013-08-03 20:21:43 +0300
+
+ActionController::RoutingError (No route matches [GET] "/movies/sort/title"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/movies/sort/title" for 127.0.0.1 at 2013-08-03 20:25:25 +0300
+
+ActionController::RoutingError (No route matches [GET] "/movies/sort/title"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/movies/sort/title" for 127.0.0.1 at 2013-08-03 20:26:20 +0300
+
+ActionController::RoutingError (No route matches [GET] "/movies/sort/title"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/movies/sort/title" for 127.0.0.1 at 2013-08-03 20:29:35 +0300
+
+ActionController::RoutingError (No route matches [GET] "/movies/sort/title"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/movies/sort" for 127.0.0.1 at 2013-08-03 20:30:34 +0300
+  Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"sort"}
+  [1m[36mMovie Load (527.8ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", "sort"]]
+Completed 404 Not Found in 550ms
+
+ActiveRecord::RecordNotFound (Couldn't find Movie with id=sort):
+  app/controllers/movies_controller.rb:5:in `show'
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.7ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/sort/title" for 127.0.0.1 at 2013-08-03 20:31:22 +0300
+  Processing by MoviesController#sort as HTML
+  Parameters: {"sort_field"=>"title"}
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 1ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:31:22 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (3.4ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (45.5ms)
+Completed 200 OK in 99ms (Views: 92.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:31:27 +0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:31:28 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:31:28 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:31:28 +0300
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/sort/release_date" for 127.0.0.1 at 2013-08-03 20:31:59 +0300
+  Processing by MoviesController#sort as HTML
+  Parameters: {"sort_field"=>"release_date"}
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 2ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:31:59 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (14.3ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (55.5ms)
+Completed 200 OK in 106ms (Views: 89.1ms | ActiveRecord: 15.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:32:06 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:32:06 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:32:06 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:32:06 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/sort/title" for 127.0.0.1 at 2013-08-03 20:34:39 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_field"=>"title"}
+  [1m[35mMovie Load (0.6ms)[0m  SELECT "movies".* FROM "movies" ORDER BY title
+Rendered movies/index.html.haml within layouts/application (204.1ms)
+Completed 200 OK in 241ms (Views: 238.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:34:44 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:34:44 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:34:44 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:34:44 +0300
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/sort/release_Date" for 127.0.0.1 at 2013-08-03 20:34:58 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_field"=>"release_Date"}
+  [1m[36mMovie Load (0.9ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY release_Date[0m
+Rendered movies/index.html.haml within layouts/application (124.0ms)
+Completed 200 OK in 168ms (Views: 156.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:35:03 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:35:03 +0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:35:03 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:35:03 +0300
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:35:23 +0300
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.9ms)[0m  SELECT "movies".* FROM "movies" 
+Rendered movies/index.html.haml within layouts/application (129.0ms)
+Completed 200 OK in 185ms (Views: 167.7ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:35:27 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:35:27 +0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:35:28 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:35:28 +0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2013-08-03 20:36:15 +0300
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.6ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (61.3ms)
+Completed 200 OK in 104ms (Views: 90.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:36:23 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:36:26 +0300
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:36:26 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:36:26 +0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/sort/release_date" for 127.0.0.1 at 2013-08-03 20:36:33 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_field"=>"release_date"}
+  [1m[35mMovie Load (0.5ms)[0m  SELECT "movies".* FROM "movies" ORDER BY release_date
+Rendered movies/index.html.haml within layouts/application (89.5ms)
+Completed 200 OK in 124ms (Views: 121.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:36:45 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:36:46 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:36:46 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:36:46 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/sort/title" for 127.0.0.1 at 2013-08-03 20:37:01 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_field"=>"title"}
+  [1m[36mMovie Load (0.8ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (335.9ms)
+Completed 200 OK in 390ms (Views: 388.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-03 20:37:05 +0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-03 20:37:06 +0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-03 20:37:06 +0300
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-03 20:37:06 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
