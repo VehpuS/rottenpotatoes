@@ -8,7 +8,9 @@ class MoviesController < ApplicationController
 
   def index
     if params[:sort_field]
-      then @movies = Movie.order(params[:sort_field])
+      then 
+        @sort = params[:sort_field]
+        @movies = Movie.order(params[:sort_field])
       else @movies = Movie.all
     end
   end
