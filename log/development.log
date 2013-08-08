@@ -2889,3 +2889,27 @@ Served asset /application.js - 304 Not Modified (13ms)
 
 Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-09 01:35:54 +0300
 Served asset /jquery_ujs.js - 304 Not Modified (50ms)
+
+
+Started GET "/sort/title" for 127.0.0.1 at 2013-08-09 01:58:35 +0300
+  Processing by MoviesController#index as HTML
+  Parameters: {"sort_field"=>"title"}
+  [1m[36mMovie Load (52.5ms)[0m  [1mSELECT "movies".* FROM "movies" ORDER BY title[0m
+Rendered movies/index.html.haml within layouts/application (1131.4ms)
+Completed 200 OK in 2738ms (Views: 2669.4ms | ActiveRecord: 63.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-08-09 01:59:12 +0300
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-08-09 01:59:13 +0300
+Served asset /jquery.js - 304 Not Modified (70ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-08-09 01:59:13 +0300
+Served asset /jquery_ujs.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-08-09 01:59:13 +0300
+Served asset /application.js - 304 Not Modified (40ms)
