@@ -2,16 +2,28 @@ class MoviesController < ApplicationController
 
   def show
     id = params[:id] # retrieve movie ID from URI route
+    @all_ratings = ['G','PG','PG-13','R']
     @movie = Movie.find(id) # look up movie by unique ID
     # will render app/views/movies/show.<extension> by default
   end
 
   def index
-    if params[:sort_field]
-      then 
-        @sort = params[:sort_field]
-        @movies = Movie.order(params[:sort_field])
-      else @movies = Movie.all
+    @all_ratings = ['G','PG','PG-13','R']
+    if params[:ratings]
+      then
+      @ratings = params[:ratings]
+      if params[:sort_field]
+        then 
+          @sort = params[:sort_field]
+          @movies = Movie.where("ratings = ?", params[:ratings]).order(params[:sort_field])
+        else @movies = Movie.where("ratings = ?", params[:ratings]) 
+      end
+    else 
+      params[:ratings] = {}
+      @all_ratings.each do |rating|
+        params[:ratings][rating] = 1
+      end
+      @movies = Movie.order(params[:sort_field])
     end
   end
 
@@ -44,6 +56,10 @@ class MoviesController < ApplicationController
   end
 
   def sort
+    redirect_to movies_path
+  end
+
+  def filter
     redirect_to movies_path
   end
 
