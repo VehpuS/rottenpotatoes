@@ -41,7 +41,8 @@ Rottenpotatoes::Application.routes.draw do
   #   end
     match 'filter/:ratings' => 'movies#index', :as => 'filter'
     # match 'sort/:sort_field' => 'movies#index', :as => 'sort'
-    match 'sort/:sort_field' => 'movies#index', :as => 'sort'
+    match 'filter/:ratings/sort/:sort_field' => 'movies#index', :as => 'sort'
+
   # Sample resource route within a namespace:
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController

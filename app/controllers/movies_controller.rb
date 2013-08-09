@@ -9,21 +9,27 @@ class MoviesController < ApplicationController
 
   def index
     @all_ratings = ['G','PG','PG-13','R']
-    if params[:ratings]
+    if not params[:ratings].nil?
       then
-      @ratings = params[:ratings]
-      if params[:sort_field]
-        then 
-          @sort = params[:sort_field]
-          @movies = Movie.where("ratings = ?", params[:ratings]).order(params[:sort_field])
-        else @movies = Movie.where("ratings = ?", params[:ratings]) 
-      end
-    else 
+        @ratings = params[:ratings]
+        if params[:sort_field]
+          then 
+            @sort = params[:sort_field]
+            @movies = Movie.where("ratings = ?", @ratings).order(params[:sort_field])
+          else 
+            @movies = Movie.where("ratings = ?", @ratings) 
+        end
+      else 
       params[:ratings] = {}
       @all_ratings.each do |rating|
         params[:ratings][rating] = 1
       end
-      @movies = Movie.order(params[:sort_field])
+      if params[:sort_field]
+        then
+          @movies = Movie.order(params[:sort_field])
+        else
+          @movies = Movie.find(:all)
+        end
     end
   end
 
